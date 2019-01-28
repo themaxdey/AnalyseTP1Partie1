@@ -1,4 +1,5 @@
 
+
 public class CV {
 	private String nom;
 	private String prenom;
@@ -10,7 +11,17 @@ public class CV {
 	
 	
 	public static void main(String[] args) {
+		System.out.println("Bienvenue chez Barette !");
+				
+		String[] tabCompetMaxime = {"Web", "Java", "MySQL", "Paint"};
+		CV cvMaxime = new CV ("Maxime", "Dery", "Professionel", 2, tabCompetMaxime, "Apprendre a produire des bons logiciels");
 		
+		String[] tabCompetHamza = {"Programmateur", "Java", "HTML", "Photoshop"};
+		CV cvHamza = new CV ("Hamza", "Nassime", "Talentueux", 2, tabCompetHamza, "Passer le cours");
+		
+		cvMaxime.affiche();
+		System.out.println("------------------");
+		cvHamza.affiche();
 	}
 	
 	public void affiche() {
