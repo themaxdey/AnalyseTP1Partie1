@@ -36,7 +36,14 @@ public class CV {
 		
 	}
 
-	
+	public CV (String nom, String prenom, String formation, int experience, String[] competences, String attentes) {
+		this.nom = nom;
+		this.attentes = attentes;
+		this.formation = formation;
+		this.prenom = prenom;
+		this.experience = experience;
+		this.competences = competences;
+	}
 	
 	
 }
